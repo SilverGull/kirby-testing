@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PresentationComponentComponent } from './presentation-component/presentation-component.component';
+import { KirbyModule } from '@kirbydesign/designsystem';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { PresentationComponentComponent } from './presentation-component/present
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    KirbyModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
