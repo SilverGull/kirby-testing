@@ -3,13 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PresentationComponentComponent } from './presentation-component/presentation-component.component';
 import { KirbyModule } from '@kirbydesign/designsystem';
+import { OnPushComponent } from './on-push/on-push.component';
+import { DefaultComponent } from './default/default.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PresentationComponentComponent
+    OnPushComponent,
+    DefaultComponent
   ],
   imports: [
     BrowserModule,
@@ -17,6 +19,6 @@ import { KirbyModule } from '@kirbydesign/designsystem';
     KirbyModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
