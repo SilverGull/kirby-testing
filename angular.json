@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "kirby-dropdown-bug": {
+    "kirby-testing": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/kirby-dropdown-bug",
+            "outputPath": "dist/kirby-testing",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -76,18 +76,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "kirby-dropdown-bug:build"
+            "browserTarget": "kirby-testing:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "kirby-dropdown-bug:build:production"
+              "browserTarget": "kirby-testing:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "kirby-dropdown-bug:build"
+            "browserTarget": "kirby-testing:build"
           }
         },
         "test": {
@@ -124,15 +124,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "kirby-dropdown-bug:serve"
+            "devServerTarget": "kirby-testing:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "kirby-dropdown-bug:serve:production"
+              "devServerTarget": "kirby-testing:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "kirby-dropdown-bug"
+  "defaultProject": "kirby-testing"
 }
