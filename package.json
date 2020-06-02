@@ -22,7 +22,7 @@
     "@capacitor/android": "^2.0.1",
     "@capacitor/cli": "^2.0.1",
     "@capacitor/core": "^2.0.1",
-    "@kirbydesign/designsystem": "file:../drb/designsystem/dist/kirbydesign-designsystem-1.2.7.tgz",
+    "@kirbydesign/designsystem": "1.2.36",
     "rxjs": "^6.5.5",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
